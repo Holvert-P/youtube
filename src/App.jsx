@@ -1,5 +1,11 @@
+import Basics from "./Components/Basics";
+
 const App = () => {
-  return <div>Hello world!</div>;
+  return (
+    <>
+      <Basics />
+    </>
+  );
 };
 
 export default App;

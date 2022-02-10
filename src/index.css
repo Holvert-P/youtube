@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.Error {
+  font-family: "Anton", sans-serif;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-text,
+.error-number {
+  width: 100%;
+  color: transparent;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: bold;
+  background-image: url(./assets/mountain.jpg);
+  background-size: cover;
+  background-position-y: center;
+  background-clip: text;
+}
+.error-number {
+  color: #000;
+  font-size: 8rem;
+}
+
+.Error a {
+  text-decoration: none;
+  color: #4a4de9;
+}
+a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+li {
+  margin: 1rem 0;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.active {
+  font-weight: bold;
+  color: #2988b4;
+}
