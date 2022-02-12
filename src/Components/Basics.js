@@ -3,6 +3,8 @@ import {
   Route,
   Routes,
   Navigate,
+  HashRouter,
+  Link,
 } from "react-router-dom";
 import Acerca from "../pages/Acerca";
 import Contacto from "../pages/Contacto";
@@ -17,7 +19,21 @@ import Navbar from "./Navbar";
 const Basics = () => {
   return (
     <>
+      <nav>
+        <h2>HasRouter</h2>
+
+        <HashRouter>
+          <li>
+            <p>navegacion con hasRouter</p>
+            <Link to="/">Inicio</Link>
+            <Link to="/acerca">Acerca</Link>
+            <Link to="/contacto">Contacto</Link>
+          </li>
+        </HashRouter>
+      </nav>
+      {/* <Routes></Routes> */}
       <Router>
+        <h2>BrowserRouter</h2>
         <Navbar />
         <Routes>
           <Route path="/acerca" element={<Acerca />} />
